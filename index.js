@@ -149,21 +149,21 @@ function changeDirection(event){
     const keyPressed = event.keyCode;
   
     
-    //const paddle1Up = 87;
-    //const paddle1Down = 83;
+    const paddle1Up = 87;
+    const paddle1Down = 83;
     const paddle2Up = 38;
     const paddle2Down = 40;
     paddle1 == ballyDirection;
 
     switch(keyPressed){
-       /* case(paddle1Up):
+       case(paddle1Up):
         if(paddle1.y > 0){
         paddle1.y -= paddleSpeed;}
         break;
         case(paddle1Down):
         if(paddle1.y < gameHeight - paddle1.height){
         paddle1.y += paddleSpeed;}
-        break;*/
+        break;
 
         case(paddle2Up):
         if(paddle2.y > 0){
@@ -205,7 +205,3 @@ function resetGame(){
     clearInterval(intervalId);
     gameStart();
 };
-/*
-function aiPaddle(){
-paddle1 == ballyDirection
-}*/
